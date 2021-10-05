@@ -1,0 +1,41 @@
+.accordion {
+                        /* Border */
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                        border-bottom-color: transparent;
+                        border-radius: 4px;
+                    }
+
+                    .accordion-item {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+                    }
+
+                    .accordion-header {
+                        /* Center the content horizontally */
+                        align-items: center;
+                        display: flex;
+
+                        cursor: pointer;
+                        padding: 16px;
+                    }
+
+                    .accordion-toggle-icon {
+                        margin-right: 12px;
+                    }
+
+                    .accordion-title {
+                        /* Take remaining width */
+                        flex: 1;
+                    }
+
+                    .accordion-content {
+                        /* For not selected item */
+                        display: none;
+
+                        border-top: 1px solid rgba(0, 0, 0, 0.3);
+                        padding: 16px;
+                    }
+
+                    .accordion-content-selected {
+                        /* For selected item */
+                        display: block;
+                    }
