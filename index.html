@@ -228,11 +228,25 @@
                         /* For selected item */
                         display: block;
                     } */
+    
+    
+                        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+                    .active, .accordion-toggle-icon":hover {
+                      background-color: #ccc;
+                    }
+
+                    /* Style the accordion panel. Note: hidden by default */
+                    .accordion-content {
+                      padding: 0 18px;
+                      background-color: white;
+                      display: none;
+                      overflow: hidden;
+                    }
 
   </style>
 
 <script>
-  var acc = document.getElementsByClassName("accordion__header");
+  var acc = document.getElementsByClassName("accordion-header");
   var i;
 
   for (i = 0; i < acc.length; i++) {
